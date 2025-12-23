@@ -1,0 +1,226 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{amsfonts}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{amsmath, amssymb , graphicx }
+\usepackage{algorithm} 
+\usepackage[noend]{algpseudocode}
+
+\newenvironment{proof}[1][Proof.]{ \begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{booktabs}
+\usepackage{isomath}
+\usepackage{latexsym,    amscd, amsfonts, enumerate, color}
+
+
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+% -----------------------------
+% رنگ‌ها
+% -----------------------------
+\definecolor{mapleKeyword}{RGB}{0,0,180}      % آبی برای کلیدواژه‌ها
+\definecolor{mapleComment}{RGB}{0,128,0}      % سبز برای کامنت
+\definecolor{mapleNumber}{RGB}{180,0,0}       % قرمز برای اعداد
+\definecolor{mapleString}{RGB}{128,0,128}     % بنفش برای رشته‌ها
+\definecolor{mapleOperator}{RGB}{128,0,0}     % 
+
+
+\lstdefinelanguage{MapleCustom}{
+    morekeywords={restart,with,proc,end,return,local,for,from,to,do,if,then,else,fi,break},
+    sensitive=true,
+    morecomment=[l]{#},
+    morestring=[b]",
+}
+
+\lstset{
+    language=MapleCustom,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{mapleKeyword}\bfseries,
+    commentstyle=\color{mapleComment}\itshape,
+    stringstyle=\color{mapleString},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    literate=
+        {:=}{{\color{mapleOperator}{:=}}}2
+        {+}{{\color{mapleOperator}{+}}}1
+        {-}{{\color{mapleOperator}{-}}}1
+        {*}{{\color{mapleOperator}{*}}}1
+        {/}{{\color{mapleOperator}{/}}}1
+        {=}{{\color{mapleOperator}{=}}}1
+        {<}{{\color{mapleOperator}{<}}}1
+        {>}{{\color{mapleOperator}{>}}}1
+        {<=}{{\color{mapleOperator}{<=}}}2
+        {>=}{{\color{mapleOperator}{>=}}}2
+        {<>}{{\color{mapleOperator}{<>}}}2
+}
+
+\newtheorem{class}{Class   }
+\newtheorem{theorem}{Theorem }
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example  }
+\newtheorem{corollary}{Corollary  }
+\newtheorem{definition}{Definition  }
+\newtheorem{hypothesis}{Hypothesis H1  }
+\newtheorem{problem}{Problem }
+
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{250mm}
+\setlength{\topmargin}{-20mm}
+\setlength\oddsidemargin   {1\p@}
+\setlength\evensidemargin  {7\p@}
+\setlength\marginparwidth{0\p@}
+\setlength\headsep   {0\p@}
+\newdimen\bibindent
+\setlength\bibindent{\parindent}
+\setlength{\parskip}{\z@ \@plus \p@}
+\setlength{\hfuzz}{2\p@}
+\setlength{\arraycolsep}{1.5\p@}
+\tolerance=500
+\predisplaypenalty=0
+\clubpenalty=10000
+\widowpenalty=10000
+\setlength\footnotesep{7.7\p@}
+\newdimen\betweenumberspace    % dimension for space between
+\betweenumberspace=5\p@         % number and text of titles
+\newdimen\headlineindent            % dimension for space of
+\headlineindent=2.5cc                  % number and gap of running
+\setlength{\footskip}{15mm}
+ 
+
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+
+
+
+\begin{document}
+\subsection*{Response to Reviewer 2:}
+The paper addresses a relevant problem in numerical mathematics and is focused on the solution of Volterra integral equations using hybrid radial kernels. Unfortunately, the present form of the paper contains several concerns that do not seem to make it publishable. 
+\\ \\   \vspace*{0.7cm} \\
+\begin{Large}
+\textbf{List of major revisions}
+\end{Large}
+ \vspace*{0.7cm} \\
+{\color{red}Comment: } The paper contains sometimes mistakes, typos or words that are not usual in English. 
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We thank the reviewer for the comment. We have thoroughly proofread the manuscript and corrected all typographical, grammatical, and language-related issues. }
+ \vspace*{0.5cm} \\
+{\color{red}Comment: } Often authors quote very old papers forgetting more recent ones. Old references are of more than 20 years ago; they should be reduced, replacing them with more recent review book or review article. This is mainly evident in section 1. Note that the title of [33] is wrong.
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We are very grateful to your comments on the manuscript. In the revised manuscript, we have carefully updated the bibliography in Section 1 by reducing overly old references and incorporating more recent review articles and authoritative sources that better reflect the current state of the field. We have also corrected the title of reference [33] as noted. }
+ \vspace*{0.5cm} \\
+{\color{red}Comment: } In section 1, authors should also mention the most recent literature available literature focused on automatic or optimization-based selection of the RBF shape parameter. None of commonly-used and well-established methodologies or algorithms are mentioned. 
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We thank the reviewer for this valuable suggestion. In the revised manuscript, we have expanded the Introduction to include a discussion of modern and widely adopted strategies for the automatic selection of RBF shape parameters. Specifically, we now mention curvature-adaptive approaches, data-driven techniques based on neural networks, Bayesian optimization methods, and HS-SVD-based stabilization strategies. The following paragraph has been added to the Introduction:}\\
+{\color{green}
+“To mitigate this, a range of modern strategies has been developed, including curvature-adaptive schemes [25], data-driven approaches leveraging neural networks or regression models [26], and Bayesian optimization techniques [27], which systematically tune the shape parameter to balance precision and stability. Additionally, the Hilbert–Schmidt SVD (HS-SVD) approach provides a stable mechanism for replacing a set of near-flat kernels with scattered centres with a well-conditioned basis for exactly the same space [28,29, 30]. These methods aim to balance accuracy and numerical stability more systematically than traditional trial-and-error approaches.”}
+\vspace*{0.5cm}
+\\ {\color{
+purple}(Please see pages 2 and 3 
+ in the revised manuscript.)}
+ \vspace*{0.5cm} \\
+{\color{red}Comment: } Section 2.1 refers to approximation while it is apparently on interpolation, is it? In any case, interpolation is not mentioned at all.
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We are very grateful to your comments on the manuscript. In the revised manuscript, the term “approximation” has been replaced with “interpolation” in Section 2.1 and throughout the text where appropriate. }
+ \vspace*{0.5cm} \\
+{\color{red}Comment: } At the end of page 3 authors refer to polynomial addition but, introduced in such a way, its significance and its role are totally unclear.
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We are very grateful to your comments on the manuscript.  The revised manuscript now includes a concise explanation of the purpose of polynomial augmentation in ensuring matrix invertibility, as well as a note on why such terms are often omitted in practice. We have noted this point as follows: }\\
+{\color{green} “Therefore, lower degree polynomials  \[     \Lambda(\mathbfit{x})=\sum_{k=1}^{m} \zeta_k p_k (\mathbfit{x}), \] are often required to ensure invertibility. In the above equation, the polynomials $p_1, \cdots, p_m$ form a basis for the $m=\displaystyle \left( \begin{array}{c} d+r-1    \\ r-1 \end{array} \right)$-dimensional linear space  $\displaystyle \Pi_{r-1}^{d}(\Omega)$  of polynomials of total degree less than or equal to $m - 1$ in $d$ variables on the set $\Omega$ [36].  
+However, in most cases, radial kernels without augmented polynomials $\Lambda(\mathbfit{x})$ are usually used where satisfactory results have been obtained without encountering singular matrices [34]. For this reason, the augmented polynomial terms are often removed [35,37].” }
+ \vspace*{0.5cm}
+\\ {\color{
+purple}(Please see page 4
+ in the revised manuscript.)}
+\vspace*{0.5cm} \\
+{\color{red}Comment: } HS-SVD techniques are not explicitly quoted, neither in section 1 nor in section 6, although HS-SVD (Brownian Bridge, Brownian motion, etc) are strongly used in the work, see G. Fasshauer et al. articles published in 2012 (SIAM J. Sci. Comput.) and 2015 (Numerical Algorithms) and quote them accordingly. 
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} 
+Thank you for  your  valuable  comments. In the revised manuscript, we have added a brief explanation of the method in the Introduction, as follows:}  \vspace*{0.1cm}  \\ 
+ {\color{green} “Additionally, the Hilbert–Schmidt SVD (HS-SVD) approach provides a stable mechanism for replacing a set of near-flat kernels with scattered centres to a well-conditioned basis for exactly the same space [29, 30].”}\\
+   {\color{
+purple}(Please see pages 2 and 3
+ in the revised manuscript.)}  \vspace*{0.2cm} \\ 
+ {\color{blue} Furthermore, we have cited the key foundational references relevant to this approach, including:  \vspace*{0.2cm}  \\
+$[29]$ R. Cavoretto, G. E. Fasshauer, M. McCourt, An introduction to the Hilbert‑Schmidt SVD using iterated Brownian bridge kernels, Numer. Algor. 68 (2) (2015) 393–422.\\
+$[30]$ G. E. Fasshauer, M. J. McCourt, Stable evaluation of Gaussian radial basis function interpolants, SIAM J. Sci. Comput. 34 (2) (2012) A737–A762. }\\
+\vspace*{0.5cm} \\
+{\color{red}Comment: } In section 5 the choice of RMS as an objective function makes useless all the previous purposes of optimal selection of the HRK shape parameters. It is based on the exact solution u, which the authors say to be unknown! No optimal or near-optimal prediction can be done in such a way!
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} Thank you for your insightful comments. Since the purpose of this paper is to compare the results of the HRKs method for various VIEs, we focus on problems that have known exact solutions. It is important to note that for practical problems where the exact solution is unavailable, calculating the exact RMS norm is not possible. In these cases, leave-one-out cross-validation (LOOCV) [47] is a widely used method that can be applied alongside the PSO algorithm to determine the optimal parameter values. We have noted this point in the form of Remark 2 on page 11 of the article as follows:   }\vspace*{0.35cm}  \\
+{\color{green} “Remark 2. Since the aim of the present paper is the comparison of the results of the HRKs method for different VIEs, problems with existing exact solutions are considered. It must be emphasized that for practical problems where the exact solution is not known, it is not possible to calculate the exact RMS norm. In such situations, leave-one-out cross-validation (LOOCV) [47] is a prominent technique that can be used in conjunction with the PSO algorithm to find the optimal values of parameters.” } \vspace*{0.5cm}
+\\ {\color{
+purple(Please see page 3
+ in the revised manuscript.)}
+ \vspace*{0.5cm} \\
+{\color{red}Comment: } Apart from the main concern on the strategy for the parameters' selection, reproducibility purposes are not satisfied. Authors do not provide implemented codes in the manuscript, or something that can help the reader to figure out the idea behind the proposed methodology. This also makes useless any wish of check, understanding, and reproducibility of the given results.
+ \vspace*{0.5cm} \\
+{\color{red}Response:} {\color{blue} We thank the reviewer for the valuable comment. In the revised version of the manuscript, the convergence behavior of the  Gbest values  in the modified PSO algorithm proposed in this paper  is illustrated through convergence plots for the first and second numerical examples, providing a clear view of the convergence trend and the overall optimization performance.\\
+
+
+Furthermore, the complete implementation of the  modified PSO algorithm used in this study has been made publicly available via an external link provided in the manuscript. Since the full code is provided, it can be straightforwardly employed to optimize model parameters by redefining the objective (fitness) function and the corresponding parameter bounds. Consequently, interested readers can easily use the shared implementation to perform parameter tuning and optimization tasks without requiring additional algorithmic details.
+
+It should be noted that the implementation code of the  modified PSO algorithm proposed in this paper  was not included directly in the manuscript due to its relatively large size, as presenting it in full would have adversely affected the readability and overall flow of the paper. Therefore, the code is provided through an external link to ensure accessibility while preserving the clarity and structure of the manuscript.
+Also, the full implementation of the proposed PSO algorithm
+is publicly available at: {\color{yellow}[insert link here]}. It is worth mentioning that all calculations and plots were performed using “Maple 18” software and executed on a laptop with a 1.70 GHz Intel Core i5-4210U CPU and 6 GB of RAM.  }
+
+\vspace*{1cm} 
+
+
+
+\hspace*{-0.6cm}{\color{violet}The authors would like to thank the reviewer for the attention and the opportunity they gave us to
+correct the issues, and also hope these answers be proper. } {\color{red}(All changes are shown in red color in
+therevised manuscript.)}\\ \\
+{\color{violet}With best regards and most sincerely,\\ \\
+Corresponding author (on behalf of the authors)}
+
+
+\end{document}
+
+
