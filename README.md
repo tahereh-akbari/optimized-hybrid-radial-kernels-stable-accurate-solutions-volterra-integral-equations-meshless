@@ -18,5 +18,5 @@ Users can define their own objective function and customize algorithm parameters
 
 Reference
 
-This implementation, in the current manuscript under revision, has been used for optimizing hybrid radial kernel parameters in Volterra integral equations: A PSO-Optimized Hybrid Radial Kernel Method for the Stable and Accurate Solution of Volterra Integral Equations
+This implementation, in the current manuscript under revision, has been used for optimizing hybrid radial kernel parameters in Volterra integral equations: "A PSO-Optimized Hybrid Radial Kernel Method for the Stable and Accurate Solution of Volterra Integral Equations"
 
