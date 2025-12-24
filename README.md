@@ -1,1 +1,1 @@
-# optimized-hybrid-radial-kernels-stable-accurate-solutions-volterra-integral-equations-meshless
+# PSO-Hybrid-RBF-Volterra
